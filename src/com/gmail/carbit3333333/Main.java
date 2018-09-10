@@ -32,6 +32,16 @@ public class Main {
 		System.out.println();
 		
 		System.out.println(board.getAllArea());
+		board.getShape();
+		
+		Rectangle rec = new Rectangle(point1, point2, point3, point4);
+		rec.getArea();
+		System.out.println(rec.getArea());
+		System.out.println();
+		
+		board.setShape(rec);
+		board.getShape();
+		
 	}
 
 }

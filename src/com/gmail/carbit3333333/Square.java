@@ -42,7 +42,11 @@ public class Square extends Shape {
 	 */
 	@Override
 	public String toString() {
-		return "Square [point1=" + point1 + ", point2=" + point2 + ", point3=" + point3 + ", point4=" + point4 + "]";
+		return "Square "
+				+ "[AB=" + point1.getX() +", "+ point1.getY()
+				+ ", BC=" + point2.getX() +", "+ point2.getY() 
+				+ ", AC=" + point3.getX() +", "+ point3.getY() 
+				+ ", CD=" + point4.getX() +", "+ point4.getY() + "]";
 	}
 	
 

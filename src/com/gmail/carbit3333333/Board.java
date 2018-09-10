@@ -1,5 +1,7 @@
 package com.gmail.carbit3333333;
 
+import java.util.Arrays;
+
 public class Board {
 	public Shape[] big = new Shape[4];
 
@@ -7,13 +9,10 @@ public class Board {
 		super();
 	}
 
-	public String getShape() {
+	public void getShape() {
 		for (int i = 0; i < big.length; i++) {
-			if (big[i] != null) {
-				return big[i].toString();
-			}
+			System.out.println(big[i]);
 		}
-		return "Empty";
 
 	}
 
@@ -44,6 +43,13 @@ public class Board {
 			}
 		}
 		return allArea;
+	}
+	public void deleteShape(Shape shape) {
+		for (int i = 0; i < big.length; i++) {
+			if(big[i]== shape) {
+				big[i] = null;
+			}
+		}
 	}
 
 	public Shape[] getBig() {

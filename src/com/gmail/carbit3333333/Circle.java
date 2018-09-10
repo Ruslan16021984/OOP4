@@ -37,7 +37,8 @@ public class Circle extends Shape{
 	 */
 	@Override
 	public String toString() {
-		return "Circle [point1=" + point1 + ", point2=" + point2 + "]";
+		return "Circle [AB=" + point1.getX() +", "+ point1.getY() 
+		+ ", CD=" + point2.getX() +", "+ point2.getY() + "]";
 	}
 	
 

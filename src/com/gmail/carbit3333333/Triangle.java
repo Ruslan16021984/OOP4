@@ -85,7 +85,10 @@ public class Triangle extends Shape{
 	 */
 	@Override
 	public String toString() {
-		return "Triangle [point1=" + point1 + ", point2=" + point2 + ", point3=" + point3 + "]";
+		return "Triangle "
+				+ "[AB=" + point1.getX() +", "+ point1.getY()
+				+ ", BC=" + point2.getX() +", "+ point2.getY() 
+				+ ", AC=" + point3.getX() +", "+ point3.getY() + "]";
 	}
 	
 
